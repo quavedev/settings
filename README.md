@@ -24,7 +24,15 @@ meteor add quave:settings
 ```javascript
 import { getSettings } from "meteor/quave:settings";
 
-getSettings({ packageName: "quave:collections" });
+const PACKAGE_NAME = "quave:collections";
+
+const settings = getSettings({ packageName: PACKAGE_NAME });
+
+const { isVerbose } = settings;
+
+if (isVerbose) {
+  console.log(`[${PACKAGE_NAME}]: starting...`);
+}
 ```
 
 ## Limitations
