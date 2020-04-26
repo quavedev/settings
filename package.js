@@ -1,7 +1,7 @@
 Package.describe({
   name: 'quave:settings',
   version: '1.0.0',
-  summary: 'Utility package to get settings',
+  summary: 'Utility package to get settings for a package',
   git: 'https://github.com/quavedev/settings',
 });
 
